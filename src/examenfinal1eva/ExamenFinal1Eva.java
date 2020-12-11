@@ -24,30 +24,37 @@ public class ExamenFinal1Eva {
             do{
                 System.out.println("1.- Conversion de horas a segundos.\n" +
                                    "2.- Conversion de kilometros a metros.\n" +
-                                   "3.-Salir.");
+                                   "3.- Conversion de kilometros/hora a metros/segundo.\n" +
+                                   "4.-Salir.");
                 opc = teclado.nextInt();
-            }while((opc>3)||(opc<1));
+            }while((opc>4)||(opc<1));
             switch(opc){
                 case 1:
-                    System.out.println("Introduzca el numero de horas a convertir en segundos");
+                    System.out.println("Introduzca el numero de horas a convertir en segundos.");
                     int horas=teclado.nextInt();
                     int segundos=horas*3600;
                     System.out.println(horas+" horas equivale a "+segundos+" segundos.");
                 break;
                 case 2:
-                    System.out.println("Introduzca el numero de kilometros a convertir en metros");
+                    System.out.println("Introduzca el numero de kilometros a convertir en metros.");
                     int km=teclado.nextInt();
                     int m=km*1000;
                     System.out.println(km+" kilometros equivale a "+m+" metros.");
                 break;
                 case 3:
+                    System.out.println("Introduzca la velocidad en kilometros/hora a convertir en metros/segundo.");
+                    int kmh=teclado.nextInt();
+                    double ms=kmh/3.6;
+                    System.out.println(kmh+" kilometros/hora equivale a "+ms+" metros/segundo.");
+                break;
+                case 4:
                     System.out.println("Saliendo del programa.");
                 break;
                 default:
-                    System.out.println("Error");
+                    System.out.println("Inserte una opcion valida");//Esto nunca deberia aparecer ya que el do while de arriba solo permite elegir opciones validas.
                 break;
             }
-        }while(opc!=3);
+        }while(opc!=4);
     }
     
 }
