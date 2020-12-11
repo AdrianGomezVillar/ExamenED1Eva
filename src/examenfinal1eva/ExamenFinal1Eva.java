@@ -22,7 +22,9 @@ public class ExamenFinal1Eva {
         int opc=0;
         do{
             do{
-                System.out.println("1.- Conversion de horas a segundos.\n" +
+                System.out.println("Software de conversión y modificación de datos(SCMD\u2122) desarrollado por TPM Studios\u00AE\n" +
+                                   "¿Que operación desea realizar?\n" +
+                                   "1.- Conversion de horas a segundos.\n" +
                                    "2.- Conversion de kilometros a metros.\n" +
                                    "3.- Conversion de kilometros/hora a metros/segundo.\n" +
                                    "4.-Salir.");
@@ -48,7 +50,8 @@ public class ExamenFinal1Eva {
                     System.out.println(kmh+" kilometros/hora equivale a "+ms+" metros/segundo.");
                 break;
                 case 4:
-                    System.out.println("Saliendo del programa.");
+                    System.out.println("Saliendo del programa.\n"+
+                                       "Muchas gracias por confiar en TPM Studios\u00AE");
                 break;
                 default:
                     System.out.println("Inserte una opcion valida");//Esto nunca deberia aparecer ya que el do while de arriba solo permite elegir opciones validas.
